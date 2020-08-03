@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+  </head>
+</head>
+<body>
+    <!-- Start Upper Bar 
+     <div class="upper-bar">
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm div1">
+                    <i class="fas fa-phone-alt"></i> <span>0550505053,</span>  
+                    <i class="far fa-envelope"></i> <span>Nawaf@hotmail.com</span> 
+                 </div>
+                 <div class="col-sm div2">
+                   <span>Lets Work Together,</span> 
+                   <span class="get-quote">Get Quote</span> 
+                </div>    
+            </div>
+         </div>
+     </div>
+     -->
+    <!-- End Upper Bar -->
+
+     <!-- Start Nav Bar -->
+     <div id="home" class="flight img-fluid text-center"> 
+ <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>Travel</span><span>Planner</span>    
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#addTrip">Add Trip <span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item">
+              <a class="nav-link" href="#myTrip">My Trip</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+            
+        </div>
+      </nav>
+      <section class="first">
+        <div class="container">
+        <h1>Welocme to our WebSite!</h1>
+              <button href="#myTrip">Lets Start !</button>
+        
+            </div>
+      </section>
+      
+      </div>
+     <!-- End Nav Bar -->
+             
+<!-- Start Features -->
+<div id="addTrip" class="features text-center">
+    <div class="container">
+        <h2>Features</h2>
+        <!-- <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <i class="fas fa-home fa-3x rounded-circle"></i>
+              <h3>Grea Idea</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <i class="fas fa-home fa-3x rounded-circle"></i>
+              <h3>Grea Idea</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <i class="fas fa-home fa-3x rounded-circle"></i>
+              <h3>Grea Idea</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+
+            <div class="col-sm-6 col-lg-3">
+              <i class="fas fa-home fa-3x rounded-circle"></i>
+              <h3>Grea Idea</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div> 
+
+        </div> -->
+      <div class="container">
+        <div class="col">
+          <label><b>My Trip to:</b>
+            <input id="city" type="text" placeholder="Enter Location">
+          </label><br>
+          <label><b>Departing:</b>
+            <input id="departing" type="date">
+            <button id="bt">here</button>
+          </label><br>
+
+          
+        </div>
+      </div>
+      <div id="myTrip" class="overview text-center">
+        <div class="container">
+          <div class="row no-gutters">
+           
+           <div class="col-md-6 no-gutters">
+          
+               <div class="leftside">
+                 <img id="photo"/>
+                </div>
+              
+              
+        </div>
+            <div class="col-md-6 no-gutters">
+              <div class="rightside">
+      <p id="lan"></p>
+      <p id="lng"></p>
+      <p id="countryName"></p>
+      <p id="name"></p>
+      <button>Save Trip</button>
+      <button>Delete Trip</button>
+              </div>
+             
+              </div>
+          
+
+        </div>
+      </div>
+    </div>
+   
+    </div>
+</div>
+<!-- End Features -->
+
+     <!-- Start Overview -->
+     
+     <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+  </script>     
+    
+</body>
+</html>
